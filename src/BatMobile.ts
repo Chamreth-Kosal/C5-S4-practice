@@ -1,12 +1,10 @@
 import { Vehicle } from "./Vehicle";
 export class BatMobile extends Vehicle{
     getSpeed(): number {
-        let speed: number
+        let speed = 110
         if (this.isBatman) {
             speed = 500
-        } else {
-            speed = 110
-        }
+        } 
         return speed
     }
     isBatman: boolean;
